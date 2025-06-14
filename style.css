@@ -10,24 +10,19 @@ body {
   color: #fffce1;
   text-align: center;
   font-size: 1.10em;
-  padding: 5px 0 3px 0;
+  padding: 7px 0 4px 0;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #312a2a;
-  font-family: 'Montserrat', Arial, sans-serif;
 }
 
-/* HERO SECTION */
 .hero-banner {
   position: relative;
-  background: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80') center center/cover no-repeat;
-  min-height: 530px;
-  box-shadow: 0 6px 28px rgba(0,0,0,0.11);
+  background: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  min-height: 430px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .hero-banner::after {
-  /* Overlay for readable text */
   content: "";
   display: block;
   background: rgba(0,0,0,0.44);
@@ -35,14 +30,13 @@ body {
   left: 0; top: 0; right: 0; bottom: 0;
   z-index: 0;
 }
-
 .hero-nav {
   width: 100%;
-  position: relative;
   z-index: 2;
   margin: 0 auto;
   text-align: center;
-  padding-top: 28px;
+  padding-top: 25px;
+  position: relative;
 }
 .hero-nav ul {
   display: flex;
@@ -57,7 +51,7 @@ body {
 .hero-nav a {
   color: #fff;
   font-size: 1.3em;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.1em;
   font-weight: bold;
   text-decoration: none;
   padding: 0.2em 0.2em;
@@ -67,7 +61,6 @@ body {
 .hero-nav a:hover {
   color: #ffe27d;
 }
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -75,18 +68,201 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .hero-content h1 {
   color: #fff;
-  font-size: 3.1em;
+  font-size: 2.6em;
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: bold;
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
   letter-spacing: 0.08em;
   text-shadow: 1px 2px 10px #141414;
 }
 .hero-content h2 {
   color: #fff;
-  font-size: 2.3em;
-  margin: 0 0 32px 
+  font-size: 2.0em;
+  margin: 0 0 25px 0;
+  text-shadow: 1px 2px 10px #141414;
+}
+.hero-btn {
+  font-family: 'Montserrat', Arial, sans-serif;
+  border: 2px solid #fff;
+  padding: 13px 33px;
+  background: rgba(0,0,0,0.22);
+  color: #fff;
+  border-radius: 35px;
+  font-size: 1.13em;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  margin-top: 13px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.21s, color 0.15s, border-color 0.15s;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+.hero-btn:hover, .hero-btn:focus {
+  background: #fff; color: #111; border-color: #ffe27d;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background: #181818;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0 48px 0;
+}
+.why-choose-us h2 {
+  font-size: 2.1em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+.choose-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.choose-card {
+  background: #222;
+  border-radius: 4px;
+  padding: 22px 26px 30px 26px;
+  margin: 12px 0;
+  width: 350px;
+  min-width: 220px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 13px 0 rgba(30,30,30,0.10);
+}
+.choose-icon {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto 22px auto;
+  border-radius: 3px;
+}
+.choose-icon img {
+  width: 100%;
+  max-width: 160px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}
+.choose-card h3 {
+  color: #fff9e9;
+  font-size: 1.23em;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.choose-card p {
+  color: #fff;
+  font-size: 1.05em;
+  line-height: 1.55;
+  letter-spacing: 0.1px;
+  margin: 0;
+}
+
+/* Services & Contact (simple style, customize as needed) */
+section#services {
+  text-align: center;
+  padding: 35px 0 60px 0;
+}
+section#services h2 {
+  color: #b61c20;
+}
+
+.contact-section {
+  background: #181818;
+  color: #fff;
+  text-align: center;
+  padding: 48px 0 60px 0;
+}
+.contact-section a {
+  color: #ffe27d;
+  text-decoration: none;
+}
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.97em;
+  letter-spacing: 0.03em;
+}
+
+/* Chat Modal styles */
+.chat-modal {
+  display: none; position: fixed; z-index: 99;
+  right: 28px; bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 28px rgba(0,0,0,0.22);
+  background: none; width: 360px; max-width: 97vw;
+}
+.chat-modal-content {
+  background: #fff; color: #222; border-radius: 12px;
+  padding: 24px 22px 18px 22px;
+  box-shadow: 0 5px 48px rgba(0,0,0,0.22);
+  position: relative; min-width: 260px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.chat-close {
+  position: absolute; top: 12px; right: 16px; font-size: 1.6em;
+  color: #888; cursor: pointer; font-weight: 800;
+}
+.chat-modal h3 {
+  text-align: center; margin: 0 0 16px 0; font-weight: 800;
+  font-size: 1.3em; letter-spacing: 1px;
+}
+.chat-modal form {display: flex; flex-direction: column; gap: 8px;}
+.chat-modal label {font-weight: bold; font-size: 1.04em; margin-bottom: 2px;}
+.chat-modal input, .chat-modal textarea {
+  font-size: 1.05em;
+  padding: 7px 10px; border: 1px solid #ccc; border-radius: 5px;
+}
+.chat-modal textarea { resize: vertical; min-height: 56px; }
+.chat-send {
+  margin-top: 10px; padding: 10px 0; background: #CD1A24; color: #fff;
+  border: none; border-radius: 6px; font-size: 1.13em; font-weight: bold;
+  cursor: pointer; letter-spacing: 1px; transition: background 0.2s;
+}
+.chat-send:hover { background: #a11418; }
+
+@media (max-width: 1050px) {
+  .choose-cards {flex-direction: column;align-items:center;gap: 32px;}
+  .choose-card {width:90%;}
+}
+@media (max-width: 600px) {
+  .hero-content h1{ font-size: 1.5em; }
+  .hero-content h2{ font-size: 1.1em; }
+  .hero-content { margin-top
+    .hero-btn { font-size: 1.0em; padding: 10px 17px; }
+  .hero-nav ul { flex-direction: column; }
+  .hero-nav li { margin: 10px 0; }
+  .choose-card { padding: 18px 5px 16px 5px; }
+  .chat-modal { width: 98vw; right: 1vw; }
+  section#services ul {
+    font-size: 1em;
+    padding-left: 1em;
+  }
+  .contact-section iframe {
+    width: 95% !important;
+    height: 120px !important;
+  }
+}
