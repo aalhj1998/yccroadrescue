@@ -1,68 +1,78 @@
-.main-tabs {
-  background: #fff;
-  border-bottom: 2px solid #900; /* DNA Towing's dark red */
-  width: 100%;
-  margin: 0;
-  z-index: 99;
+.why-choose-us {
+  background: #181818;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0 48px 0;
 }
-.main-tabs ul {
+.why-choose-us h2 {
+  font-size: 2.2em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 38px;
+}
+.choose-cards {
   display: flex;
   justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.choose-card {
+  background: #222;
+  border-radius: 0;
+  padding: 22px 30px 30px 30px;
+  margin: 12px 0;
+  width: 370px;
+  min-width: 260px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 16px 0 rgba(30,30,30,0.07);
 }
-.main-tabs li {
-  position: relative;
+.choose-icon {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 120px;
+  margin: 0 auto 25px auto;
 }
-.main-tabs a {
-  display: block;
-  color: #444;
+.choose-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.choose-card h3 {
+  color: #fff9e9;
+  font-size: 1.6em;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
   font-family: 'Montserrat', Arial, sans-serif;
-  text-decoration: none;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.17em;
-  font-size: 1em;
-  padding: 1.4em 2.1em;
-  transition: color 0.22s, background 0.22s;
+  font-weight: 500;
 }
-.main-tabs a:hover, .main-tabs a:focus {
-  color: #900;
-  background: #f5f5f5;
-}
-
-/* Dropdown menu */
-.dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu {
-  display: block;
-}
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  min-width: 180px;
-  background: #fff;
-  border: 1px solid #eee;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
-  z-index: 10;
-}
-.dropdown-menu li a {
-  color: #333;
-  padding: 1em 1.5em;
-  font-size: 0.98em;
-  background: #fff;
-}
-.dropdown-menu li a:hover {
-  background: #f6eaea;
-  color: #900;
+.choose-card p {
+  color: #fff;
+  font-size: 1.09em;
+  line-height: 1.55;
+  letter-spacing: 0.1px;
+  margin: 0;
 }
 
 /* Responsive for mobile */
-@media (max-width: 800px) {
-  .main-tabs ul {
+@media (max-width: 1050px) {
+  .choose-cards {
     flex-direction: column;
+    align-items: center;
+    gap: 32px;
   }
-  .main-tabs a { padding: 1em 1em; font-size: 1em;}
+  .choose-card {
+    width: 90%;
+    min-width: initial;
+  }
 }
